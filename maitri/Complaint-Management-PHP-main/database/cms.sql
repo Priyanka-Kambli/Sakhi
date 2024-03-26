@@ -83,6 +83,7 @@ INSERT INTO `complaints` (`id`, `name`, `contact`, `email`, `title`, `descriptio
 -- (19, 'Vishal .', '7876170032', 'vishalparmar3542@gmail.com', 'Accenture package ', 'I am not getting what I deserve in accenture. LOL', 'DAO99', 1, 'LOL aaukat me'),
 -- (20, 'Vishal .', '7876170032', 'vishalparmar3542@gmail.com', 'Accenture package ', 'I am not getting what I deserve in accenture. LOL', '1A8MX', 2, NULL);
 
+
 --
 -- Indexes for dumped tables
 --
