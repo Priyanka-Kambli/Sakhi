@@ -40,9 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `position`, `profileURL`) VALUES
-(1, 'wantedbear007', 'admin', 'Lead Developer', 'https://bhanupratap-singh.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbhanupratap.c3f0ef2d.png&w=1920&q=75'),
-(2, 'vishal', 'admin', 'Support Developer', 'https://media.licdn.com/dms/image/D4D03AQEDAhgJKkVawA/profile-displayphoto-shrink_800_800/0/1688495623624?e=1702512000&v=beta&t=sTv4RrlMAfYds9-xeepn65__US1E0bj5cbIdjWQlm78');
-
+(1, 'Priyanka', 'admin', 'Women Redressal'),
+(2, 'Nisha', 'admin', 'ICC admin','Screenshots\Women-Development-Cell.png' )
 -- --------------------------------------------------------
 
 --
@@ -76,13 +75,14 @@ INSERT INTO `complaints` (`id`, `name`, `contact`, `email`, `title`, `descriptio
 (9, 'Shreya Pandey', '9876543217', 'shreya@example.com', 'Refund Request', 'I would like to request a refund for my recent purchase.', 'CDEF9012', 1, 'Processing'),
 (11, 'Nisha Gupta', '9876543219', 'nisha@example.com', 'Product Quality', 'The quality of the product is not up to the mark as advertised.', 'KLMN7890', 1, 'Investigating'),
 (12, 'Vikram Sharma', '9876543220', 'vikram@example.com', 'Delayed Refund', 'I requested a refund, but it\'s taking too long to process.', 'OPQR1234', 1, 'Processing'),
-(14, 'Arun Singh', '9876543222', 'arun@example.com', 'Website Error', 'I encountered an error while trying to place an order on your website.', 'WXYZ9012', 1, 'Investigating'),
-(15, 'Kavita Patel', '9876543223', 'kavita@example.com', 'Late Response', 'I sent an email with a query, but I haven\'t received a response yet.', 'ABCD2345', 1, 'Pending'),
-(16, 'Rajat Gupta', '9876543224', 'rajat@example.com', 'Faulty Electronics', 'The electronic device I purchased is malfunctioning.', 'EFGH3456', 1, 'Investigating'),
-(17, 'Suman Kumar', '9876543225', 'suman@example.com', 'Wrong Size', 'The clothing I ordered is not the size I specified.', 'IJKL4567', 1, 'Pending'),
-(18, 'Adyut', '9131987420', 'kumaradyut@gmail.com', 'Watch problem', 'My watch stopped working after water damage.', 'EKC67', 1, 'hot hai'),
-(19, 'Vishal .', '7876170032', 'vishalparmar3542@gmail.com', 'Accenture package ', 'I am not getting what I deserve in accenture. LOL', 'DAO99', 1, 'LOL aaukat me'),
-(20, 'Vishal .', '7876170032', 'vishalparmar3542@gmail.com', 'Accenture package ', 'I am not getting what I deserve in accenture. LOL', '1A8MX', 2, NULL);
+-- (14, 'Arun Singh', '9876543222', 'arun@example.com', 'Website Error', 'I encountered an error while trying to place an order on your website.', 'WXYZ9012', 1, 'Investigating'),
+-- (15, 'Kavita Patel', '9876543223', 'kavita@example.com', 'Late Response', 'I sent an email with a query, but I haven\'t received a response yet.', 'ABCD2345', 1, 'Pending'),
+-- (16, 'Rajat Gupta', '9876543224', 'rajat@example.com', 'Faulty Electronics', 'The electronic device I purchased is malfunctioning.', 'EFGH3456', 1, 'Investigating'),
+-- (17, 'Suman Kumar', '9876543225', 'suman@example.com', 'Wrong Size', 'The clothing I ordered is not the size I specified.', 'IJKL4567', 1, 'Pending'),
+-- (18, 'Adyut', '9131987420', 'kumaradyut@gmail.com', 'Watch problem', 'My watch stopped working after water damage.', 'EKC67', 1, 'hot hai'),
+-- (19, 'Vishal .', '7876170032', 'vishalparmar3542@gmail.com', 'Accenture package ', 'I am not getting what I deserve in accenture. LOL', 'DAO99', 1, 'LOL aaukat me'),
+-- (20, 'Vishal .', '7876170032', 'vishalparmar3542@gmail.com', 'Accenture package ', 'I am not getting what I deserve in accenture. LOL', '1A8MX', 2, NULL);
+
 
 --
 -- Indexes for dumped tables
