@@ -107,6 +107,7 @@
         <button class="solveBtn" onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/logComplaint.php')">Register Complaint</button>
             <button class="solveBtn" onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/searchComplaint.php')">Complaint Status</button>
             <button class="solveBtn" onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/login.php')">Admin Login</button>
+            <button class="solveBtn" onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/login.php')">ICC Login</button>
             </div>   
             </div>
             </div>
