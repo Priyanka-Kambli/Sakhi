@@ -69,9 +69,9 @@ if ($_SESSION) {
         <h2>Admin Login</h2>
         <form  action="../handlers/auth.php" method="POST">
           <label for="username" >Username:</label>
-          <input value='vishal' type="text" id="username" name="username" placeholder="Enter your username" required>
+          <input value='' type="text" id="username" name="username" placeholder="Enter your username" required>
           <label for="password">Password:</label>
-          <input value="9907224577" type="password" id="password" name="password" placeholder="Enter your password" required>
+          <input value="" type="password" id="password" name="password" placeholder="Enter your password" required>
           <button type="submit" value="submit">Login</button>
         </form>
           <?php
