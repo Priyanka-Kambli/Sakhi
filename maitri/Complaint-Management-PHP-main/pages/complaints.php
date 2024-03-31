@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 
     <link rel="stylesheet" href="../style/complaints.css">
 
@@ -13,25 +14,25 @@
 
 <body>
 
-<div class="container">
-	<div class="blob-container">
-    <div class="blob"></div>
-    <div class="blob one"></div>
-    <div class="blob two"></div>
-    <div class="blob three"></div>
-    <div class="blob four"></div>
-    <div class="blob five"></div>
-    <div class="blob six"></div>
-    <div class="blob seven"></div>
-    <div class="blob eight"></div>
-    <div class="blob nine"></div>
-    <div class="blob ten"></div>
-  </div>
+    <div class="container">
+        <div class="blob-container">
+            <div class="blob"></div>
+            <div class="blob one"></div>
+            <div class="blob two"></div>
+            <div class="blob three"></div>
+            <div class="blob four"></div>
+            <div class="blob five"></div>
+            <div class="blob six"></div>
+            <div class="blob seven"></div>
+            <div class="blob eight"></div>
+            <div class="blob nine"></div>
+            <div class="blob ten"></div>
+        </div>
 
-  <section>
-      <div class="card">
-        <div class="card-child">
-          <?php
+        <section>
+            <div class="card">
+                <div class="card-child">
+                    <?php
             session_start();
             // echo $_SESSION['logged'];
             $user = $_SESSION['user'];
@@ -64,36 +65,36 @@
           echo "<h1 class='user-title'>Welcome, $user ! <span class='xdgfds'><br>";
           echo "<h4 class='position'>$position</h4>"
           ?>
-          <form action='../handlers/auth.php' method='POST'>
-            <button class='solveBtn' name='logout'>Logout</button>
-        </form>
-          </span></h1>
-          <!-- button -->
-          
-          <img class="image-container" src="../assets/user_avatar.svg" alt="user avatar" />
-        </div>
+                    <form action='../handlers/auth.php' method='POST'>
+                        <button class='solveBtn' name='logout'>Logout</button>
+                    </form>
+                    </span></h1>
+                    <!-- button -->
 
-          <div class="complaint-section">
-              <h1 class="complaints-header">Complaints</h1>
-  <table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Username</th>
-      <!-- <th>Contact Number</th>
+                    <img class="image-container" src="../assets/user_avatar.svg" alt="user avatar" />
+                </div>
+
+                <div class="complaint-section">
+                    <h1 class="complaints-header">Complaints</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <!-- <th>Contact Number</th>
       <th>Email</th> -->
-      <th>Title</th>
-    
-      <th>Status</th>
-      <th>Previous</th>
-      <th>Remarks</th>
-  
-      <th></th>
+                                <th>Title</th>
 
-    </tr>
-  </thead>
-  <tbody>
-    <?php
+                                <th>Status</th>
+                                <th>Priority</th>
+                                <th>Remarks</th>
+
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
     $str = "hello";
 
 
@@ -144,10 +145,10 @@
           $department = ""; // or any default value you prefer
         }
 
-        $remarkWord = "Solved";
+        $remarkWord = "Viewed";
       $fontColor = 'green';
       if ($status == '2') {
-        $remarkWord = "Not Solved";
+        $remarkWord = "Unviewed";
         $fontColor = 'red';
       }
       
@@ -204,11 +205,16 @@
             
           <form action='../handlers/updateComplaint.php' method='POST'>
           
+
+         
+
           <input  placeholder='Write Remarks' type='text' id='adminRemark' name='adminRemark' required  >
           <input style='display: none' id='uniqueId'  name='uniqueId'  value='$uniqueId' >
           
           
-          <button  type='submit' value='submit'  class='solveBtn'>Mark Solved</button>
+          <button  type='submit' value='submit'  class='solveBtn'>Mark Viewed</button>
+          </form>
+
           
 
           </div>
@@ -232,18 +238,18 @@
 
 
 
-  </tbody>
-</table>    
+                        </tbody>
+                    </table>
 
-<!-- table section -->
+                    <!-- table section -->
 
-<!-- table section -->
-        </div>
+                    <!-- table section -->
+                </div>
 
+            </div>
+
+        </section>
     </div>
-
-  </section>
-</div>
 
 </body>
 
@@ -270,6 +276,14 @@
 
 }
 ?>
+
+<?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["adminRemark"])) {
+            $selectedRemark = $_POST["adminRemark"];
+            // Process the selected remark (e.g., save to database)
+            echo "<p>Selected Remark: $selectedRemark</p>";
+        }
+        ?>
 
 <script src="../scripts/complaintsScript.js">
 
