@@ -66,10 +66,10 @@ if ($_SESSION) {
                 </div>
                 <div class="description">
                     <div class="login-form">
-                        <h2>Admin Login</h2>
+                        <h2>ICC Login</h2>
                         <form action="../handlers/auth.php" method="POST">
                             <label for="username">Username:</label>
-                            <input value='vishal' type="text" id="username" name="username"
+                            <input value='Nisha' type="text" id="username" name="username"
                                 placeholder="Enter your username" required>
                             <label for="password">Password:</label>
                             <input value="9907224577" type="password" id="password" name="password"

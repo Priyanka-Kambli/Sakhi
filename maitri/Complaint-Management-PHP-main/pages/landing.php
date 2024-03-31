@@ -111,7 +111,7 @@
                         onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/login.php')">Admin
                         Login</button>
                     <button class="solveBtn"
-                        onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/login.php')">ICC
+                        onclick="window.location.replace('http://localhost/Complaint-Management-PHP-main/pages/login1.php')">ICC
                         Login</button>
                 </div>
             </div>
